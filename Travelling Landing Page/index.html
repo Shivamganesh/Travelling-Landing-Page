@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Start Header -->
+    <header>
+        <div id="menu-bar" class="fa-solid fa-bars"></div>
+        <a href="#" class="header__logo">
+            <img class="header__img" src="logo.png" alt="" />
+            <p class="header__title">TRAVEL</p>
+        </a>
+        <nav class="navbar">
+            <div class="navbar__links">
+                <a href="#home">Home</a>
+                <a href="#book">Book</a>
+                <a href="#packages">Packages</a>
+                <a href="#destination">Top Destination</a>
+            </div>
+        </nav>
+        <div class="header__icons">
+            <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+            <i class="fa-regular fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search here ..." />
+            <img src="search-icon-search.svg" alt="" />
+        </form>
+    </header>
+    <!-- Start Login Form Container -->
+    <div class="login-form-container container">
+        <i class="fa-solid fa-xmark" id="form-close"> </i>
+        <form action="" id="form">
+            <h3>LOGIN</h3>
+            <input type="email" class="box" placeholder="enter your email" />
+            <input type="password" class="box" placeholder="enter your password" />
+            <input type="submit" class="btn" value="login now" />
+            <input type="checkbox" id="remember" />
+            <label for="remember">Remember Me</label>
+            <p>Forget Password? <a href="#">Click Here</a></p>
+            <p>Don't Have An Account <a href="#">Register Now</a></p>
+        </form>
+    </div>
+
+    <!---start home section-->
+
+    <section id="home" class="home">
+        <img class="image-slide active" src="island.png" alt="">
+        <img class="image-slide " src="pexels-pixabay-219692.jpg" alt="">
+        <img class="image-slide" src="bg3.jpg" alt="">
+        <img class="image-slide" src="pexels-noureddine-belfethi-10112090 (1).jpg" alt="">
+        <img class="image-slide" src="Screenshot (5).png" alt="">
+        <div class="content active">
+            <h1>Wonderful.<br><span>Island</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do labore<br> incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim amet <br> exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Beautiful.<br><span>Dubai</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed<br> incididunt ut labore et dolore
+                magna aliqua. Ut enim ad <br>exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Adventures.<br><span>Trip</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam<br> exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. </p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Beautiful.<br><span>Desert</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed <br> incididunt ut labore et dolore
+                magna aliqua. Ut enim ad <br> exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+            <a href="#">Read More</a>
+        </div>
+
+
+        <div class="content">
+            <h1>Enjoy Trip.<br><span>Luxurious</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed a<br> incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim <br>exercitation ullamco laboris nisi ut aliquip ex ea .</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <!--start media icons-->
+        <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+
+
+        </div>
+    </section>
+
+
+    <!---book section-->
+
+    <section class="book container" id='book'>
+        <h2 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h2>
+        <div class="row">
+            <div class="book_row_image">
+                <img src="travel-1.jpg" alt="">
+            </div>
+            <div class="book_row_form">
+                <div class="inputBox">
+                    <h3>Where To</h3>
+                    <input type="text" placeholder="place name">
+                </div>
+                <div class="inputBox">
+                    <h3>How Many</h3>
+                    <input type="number" placeholder="number of gusts">
+                </div>
+                <div class="inputBox">
+                    <h3>Arrivals</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>Leaving</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="Book Now" />
+            </div>
+        </div>
+
+    </section>
+
+    </section>
+
+    <section class="packages container" id="packages">
+        <h2 class="heading">
+            <span>P</span>
+            <span>A</span>
+            <span>C</span>
+            <span>K</span>
+            <span>A</span>
+            <span>G</span>
+            <span>E</span>
+            <span>S</span>
+        </h2>
+        <div class="packages_parent">
+            <div class="box">
+                <div class="packages_box---image">
+                    <img src="Venice Beach.jpg" alt="" />
+                </div>
+                <div class="packages_box---content-items">
+                    <h4><i class="fas fa-map-marker-alt"></i>Virginia Beach</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. voluptates dicta</p>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <span class="rate">5</span>
+                    </div>
+                    <div class="price">
+                        $80.00
+                        <span>$120.00</span>
+                    </div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="packages_box---image">
+                    <img src="Hạ Long, Vietnam.jpg" alt="" />
+                </div>
+                <div class="packages_box---content-items">
+                    <h4><i class="fas fa-map-marker-alt"></i>Virginia Beach</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. voluptates dicta</p>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <span class="rate">5</span>
+                    </div>
+                    <div class="price">
+                        $80.00
+                        <span>$120.00</span>
+                    </div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="packages_box---image">
+                    <img src="lake thun.jpg" alt="" />
+                </div>
+                <div class="packages_box---content-items">
+                    <h4><i class="fas fa-map-marker-alt"></i>Virginia Beach</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. voluptates dicta</p>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <span class="rate">5</span>
+                    </div>
+                    <div class="price">
+                        $80.00
+                        <span>$120.00</span>
+                    </div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="packages_box---image">
+                    <img src="Times Square.jpg" alt="" />
+                </div>
+                <div class="packages_box---content-items">
+                    <h4><i class="fas fa-map-marker-alt"></i>Virginia Beach</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. voluptates dicta</p>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <span class="rate">5</span>
+                    </div>
+                    <div class="price">
+                        $80.00
+                        <span>$120.00</span>
+                    </div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="packages_box---image">
+                    <img src="Santorini, Greece.jpg" alt="" />
+                </div>
+                <div class="packages_box---content-items">
+                    <h4><i class="fas fa-map-marker-alt"></i>Virginia Beach</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. voluptates dicta</p>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <span class="rate">5</span>
+                    </div>
+                    <div class="price">
+                        $80.00
+                        <span>$120.00</span>
+                    </div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="packages_box---image">
+                    <img src="Hạ Long, Vietnam.jpg" alt="" />
+                </div>
+                <div class="packages_box---content-items">
+                    <h4><i class="fas fa-map-marker-alt"></i>Virginia Beach</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. voluptates dicta</p>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <span class="rate">5</span>
+                    </div>
+                    <div class="price">
+                        $80.00
+                        <span>$120.00</span>
+                    </div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--start top-destination section -->
+    <section class="destination container" id="destination">
+        <div class="destination_parent">
+            <div class="destination_content">
+                <h2>Egypt</h2>
+                <h2>Must Visit Destination</h2>
+                <p>The Sphinx, Great Pyramids, and Nile River can all be found in the
+                    land of Egypt. Beautiful cities such as Cario, Giza, and Luxor are
+                    found in this mysterious land that draws many visitors every year.
+                    The City of Dahab is also a great destination.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="destination_image">
+                <img src="egypt2.jpg" alt="" />
+            </div>
+        </div>
+    </section>
+
+    <!--end top-destination section -->
+
+    <!---start footer section-->
+
+    <section class="footer container" id="footer">
+
+        <div class="media-icons1 ">
+            <span>Contact Me On </span>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+
+        </div>
+
+    </section>
+    <!---end footer section-->
+
+
+    <script type="text/javascript">
+        //javascript for responsive navigation menu
+        const searchBtn = document.getElementById("search-btn");
+        const loginBtn = document.getElementById("login-btn");
+        const searchBar = document.querySelector(".search-bar-container");
+
+        const menuBar = document.getElementById("menu-bar");
+        const navbar = document.querySelector(".navbar");
+
+        const formCon = document.querySelector(".login-form-container");
+        const formClose = document.getElementById("form-close");
+        const form = document.getElementById("form");
+
+
+
+        searchBtn.addEventListener("click", () => {
+            searchBtn.classList.toggle("fa-times");
+            searchBar.classList.toggle("active");
+        });
+
+        window.onscroll = () => {
+            searchBtn.classList.remove("fa-times");
+            searchBar.classList.remove("active");
+        };
+
+        function showMenu() {
+            navbar.classList.toggle("active-menu");
+        }
+
+        function showForm() {
+            formCon.style.top = "0px";
+        }
+
+        function hiddenForm() {
+            formCon.style.top = null;
+        }
+
+        menuBar.addEventListener("click", showMenu);
+        loginBtn.addEventListener("click", showForm);
+        formClose.addEventListener("click", hiddenForm);
+
+
+        //javascript for video slider navigation
+
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".image-slide");
+        const contents = document.querySelectorAll(".content");
+
+        var sliderNav = function (manual) {
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            });
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+            contents.forEach((content) => {
+                content.classList.remove("active");
+            });
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+
+    </script>
+</body>
+
+</html>
